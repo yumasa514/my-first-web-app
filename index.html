@@ -13,6 +13,12 @@
             padding: 0;
             background-color: #f4f4f4;
         }
+        img {
+        max-width: 100%; /* 親要素の幅を超えないようにする */
+        height: auto;    /* 縦横比を維持する */
+        display: block;  /* 下に謎の隙間ができるのを防ぐ（おまじない） */
+        margin: 10px 0;  /* 上下に少し余白を作る（お好みで） */
+        }
         header {
             background-color: #333;
             color: #fff;
@@ -36,12 +42,12 @@
 <body>
 
     <header>
-        <h1>ようこそ、私のウェブサイトへ</h1>
+        <h1>ガレージ</h1>
     </header>
 
     <main>
-        <h2>自己紹介</h2>
-        <p>これはHTML5で作成された基本的なウェブページのサンプルです。ここには自由にテキストを書くことができます。</p>
+        <h2>一覧</h2>
+        <img src="images/shinjuku.png"
         
         <h3>学習中の技術</h3>
         <ul>
