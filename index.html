@@ -37,6 +37,13 @@
             font-size: 0.8rem;
             color: #777;
         }
+        /* imgのところに video も追加します */
+        img, video {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 10px 0;
+        }
     </style>
 </head>
 <body>
@@ -48,7 +55,10 @@
     <main>
         <h2>一覧</h2>
         <img src="img/MMK_shinjyukuhankagai.png">
-        <video src="img/rain.mp4"></video>
+        <video src="img/rain.mp4" controls muted loop playsinline>
+        お使いのブラウザは動画タグをサポートしていません。
+        </video>
+        
         <h3>学習中の技術</h3>
         <ul>
             <li>HTML5（構造）</li>
